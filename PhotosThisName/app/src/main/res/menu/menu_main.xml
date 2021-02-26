@@ -1,0 +1,17 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.MainActivity">
+
+    <item
+        android:id="@+id/nameSearchView"
+        android:title="@string/actionSearchName"
+        app:showAsAction="ifRoom"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"/>
+
+    <item
+        android:id="@+id/actionPickContact"
+        android:title="@string/actionPickContact"
+        app:showAsAction="ifRoom"/>
+</menu>

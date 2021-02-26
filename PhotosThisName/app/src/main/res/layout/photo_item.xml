@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="@dimen/photoItemHeight">
+
+    <ImageView
+        android:id="@+id/photoImageView"
+        android:layout_width="@dimen/photoSize" android:layout_height="@dimen/photoSize"
+        android:layout_marginStart="16dp" android:layout_marginTop="16dp" android:layout_marginBottom="16dp"
+        android:scaleType="fitCenter"
+        android:contentDescription="@string/photo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/labelGuideline"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="130dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/valueGuideline"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="220dp"/>
+
+    <TextView
+        android:id="@+id/ownerNameLabelTextView"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/ownerName" android:textAppearance="?android:attr/textAppearanceSmall"
+        app:layout_constraintStart_toStartOf="@id/labelGuideline" app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dateTakenLabelTextView"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/dateTaken" android:textAppearance="?android:attr/textAppearanceSmall"
+        app:layout_constraintStart_toStartOf="@id/labelGuideline" app:layout_constraintTop_toBottomOf="@id/ownerNameLabelTextView" />
+
+    <TextView
+        android:id="@+id/descriptionLabelTextView"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/description" android:textAppearance="?android:attr/textAppearanceSmall"
+        app:layout_constraintStart_toStartOf="@id/labelGuideline" app:layout_constraintTop_toBottomOf="@id/dateTakenLabelTextView" />
+
+    <TextView
+        android:id="@+id/ownerNameTextView"
+        android:layout_width="0dp" android:layout_height="wrap_content"
+        android:layout_marginTop="4dp" android:layout_marginEnd="4dp"
+        android:textAppearance="?android:attr/textAppearanceSmall" android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="@id/valueGuideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dateTakenTextView"
+        android:layout_width="0dp" android:layout_height="wrap_content"
+        android:layout_marginTop="4dp" android:layout_marginEnd="4dp"
+        android:textAppearance="?android:attr/textAppearanceSmall" android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="@+id/valueGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/ownerNameTextView" />
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="0dp" android:layout_height="wrap_content"
+        android:layout_marginTop="4dp" android:layout_marginEnd="4dp"
+        android:ellipsize="end" android:maxLines="5"
+        android:textAppearance="?android:attr/textAppearanceSmall" android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="@+id/valueGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/dateTakenTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

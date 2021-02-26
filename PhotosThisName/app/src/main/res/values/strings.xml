@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Photos of This Name</string>
+    <string name="actionSearchName">Search \nby name</string>
+    <string name="actionPickContact">Pick a \nContact</string>
+    <string name="enterName">Enter name</string>
+    <string name="photo">Photo</string>
+    <string name="ownerName">Owner name:</string>
+    <string name="dateTaken">Date taken:</string>
+    <string name="description">Description:</string>
+    <string name="none">None description</string>
+    <string name="noFoundPhotos">No found photos match this tags</string>
+</resources>
